@@ -281,7 +281,7 @@ a {
     color: #fff;
 }
 
-.w-icon span i {
+.w-icon a i {
     display: inline-block;
     font-size: 30px;
     padding-top: 3px;
