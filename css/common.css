@@ -408,6 +408,11 @@ a {
     margin-right: 0;
 }
 
+@font-face {
+    font-family: "经典综艺体简";
+    src: url("./经典综艺体简/经典综艺体简.TTF") format("truetype");
+}
+
 .w-classify .w-classify-one li a h4 {
     font-size: 0.7rem;
     margin: 0;
