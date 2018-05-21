@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>兑客商城</title>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./mui/css/mui.css">
+    <link rel="stylesheet" href="./iconfonts/iconfont.css">
+    <!-- <link rel="stylesheet" href="./css/iconfont.css"> -->
+    <script src="./js/rem.js"></script>
+
+</head>
+
+<body>
+    <div class="w-content w-redPaper">
+        <div class="w-banner">
+            <div class="w-bannerImg">
+                <img src="./images/w-imgs/redPaper/邀请好友.png" alt="">
+                <a class="w-invitingFriends" href="shareFriends.html">
+                    立即邀请好友
+                    <div class="w-letGo">
+                        GO
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="w-rule"><span class="iconfont icon-weibiaoti2 icon-rule"></span>规则</a>
+        </div>
+        <div class="w-middle">
+            <ul class="w-myMoney">
+                <li>5.00</li>
+                <li>
+                    余额 (元)
+                    <a href="#putForward" class="putForward">提现</a>
+                </li>
+                <li>累计收益: 5.00</li>
+            </ul>
+
+            <div class="w-incomeClassify">
+                <div id="segmentedControl " class="mui-clearfix">
+                    <a href="#item1" class="mui-control-item mui-active">我的红包</a>
+                    <a href="#item2" class="mui-control-item">我的分红</a>
+
+                </div>
+                <div id="item1" class="mui-control-content mui-clearfix mui-active">
+                    <p class="w-itemNews"><span class="iconfont icon-weibiaoti2 icon-itemNews"></span>好友将得到消费礼品卡一张,持卡到店消费后</p>
+                    <div class="w-itemMiddle mui-clearfix">
+                        <div class="w-itemMiddleImg mui-pull-left">
+                            <img src="./images/w-imgs/redPaper/红包.png" alt="">
+                        </div>
+
+                        <div class="w-itemMiddleInfo mui-pull-left">
+                            <p>红包奖励</p>
+                            <p>2018.05.18</p>
+                        </div>
+                        <strong>5.00</strong>
+                    </div>
+
+                    <a href="#" class="w-itemDetail">明细</a>
+                </div>
+                <div id="item2" class="mui-control-content mui-clearfix ">
+                    <p class="w-itemNews"><span class="iconfont icon-weibiaoti2 icon-itemNews"></span>好友将得到消费礼品卡一张,持卡到店消费后</p>
+                    <div class="w-itemMiddle mui-clearfix">
+                        <div class="w-itemMiddleImg mui-pull-left">
+                            <img src="./images/w-imgs/redPaper/红包.png" alt="">
+                        </div>
+
+                        <div class="w-itemMiddleInfo mui-pull-left">
+                            <p>红包奖励</p>
+                            <p>2018.05.18</p>
+                        </div>
+                        <strong>10.00</strong>
+                    </div>
+
+                    <a href="#" class="w-itemDetail">明细</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-carPaper">
+            <img src="./images/w-imgs/redPaper/卡片.png" alt="">
+            <h3>80元礼品卡</h3>
+            <a href="#">查看详情</a>
+        </div>
+        <!-- 领取现金 -->
+        <div id="putForward" class="mui-popover w-putForward ">
+
+            <div class="w-popoverImg">
+                <img src="./images/w-imgs/redPaper/进红包主页前弹窗.png" alt="">
+                <div class="w-sumMoney">
+                    <strong>5</strong> 元</br>可提现
+                </div>
+                <div class="w-putForwardMsg">
+                    <p>恭喜获得<span>5</span>元奖励金</p>
+                    <p>您离体现只差一步邀请的距离</p>
+                </div>
+            </div>
+            <div class="w-putForwardSub">
+                <a href="#">分享领取红包</a>
+                <a href="#" class="w-putForwardClose">不想赚钱</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./mui/js/mui.min.js"></script>
+    <script>
+        mui('.mui-scroll-wrapper').scroll({
+            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+        });
+
+        $('.w-putForwardClose').on('tap', function() {
+            $('.w-putForward').hide().removeClass('mui-active');
+            $(".mui-backdrop").hide();
+        })
+
+
+
+        // $('.putForward').on('click', function() {
+        //     $('.mui-backdrop').css('backgroundColor', '#000')
+        // })
+    </script>
+
+
+
+
+</body>
+
+
+</html>
